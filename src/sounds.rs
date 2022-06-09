@@ -3,11 +3,11 @@ pub trait sounds {
 }
 
 pub struct Vowel {
-    pub character: &str;
-    pub formant_1: u16;
-    pub formant_2: u16;
-    pub length: u16;
-    pub diacritics: Vec<Diacritic>;
+    pub character:   &str;
+    pub formant_1:   u16;
+    pub formant_2:   u16;
+    pub length:      u16;
+    pub diacritics:  Vec<Diacritic>;
     pub frequencies: Vec<u16>;
 }
 
@@ -35,15 +35,15 @@ impl sounds for Vowel {
 }
 
 pub struct Consonant {
-    pub character: &str;
-    pub place: String;
-    pub manner: String;
-    pub length: u16;
-    pub diacritics: Vec<Diacritic>;
+    pub character:   &str;
+    pub place:       &str;
+    pub manner:      &str;
+    pub length:      u16;
+    pub diacritics:  Vec<Diacritic>;
     pub frequencies: Vec<u16>;
 }
 
 pub struct Diacritic {
-    pub character: &str;
+    pub character:   &str;
     pub frequencies: Vec<u16>;
 }
